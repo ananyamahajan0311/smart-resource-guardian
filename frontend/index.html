@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Resource Guardian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Resource Guardian Dashboard</h1>
+
+<div class="card">
+    <h2>Predict Electricity Usage</h2>
+    <input type="number" id="lag1" placeholder="Lag 1">
+    <input type="number" id="lag24" placeholder="Lag 24">
+    <button onclick="predict()">Predict</button>
+    <p id="predictionResult"></p>
+</div>
+
+<div class="card">
+    <h2>Check Anomaly</h2>
+    <input type="number" id="units" placeholder="Units">
+    <button onclick="checkAnomaly()">Check</button>
+    <p id="anomalyResult"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

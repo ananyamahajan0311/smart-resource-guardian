@@ -1,43 +1,36 @@
 # Smart Resource Guardian
 
-## 📌 Overview
-Smart Resource Guardian is an AI-powered system designed to monitor and predict electricity consumption and detect abnormal usage patterns in institutional buildings such as hostels and campuses.
+## Overview
+Smart Resource Guardian is an AI-powered electricity consumption prediction and anomaly detection system designed for institutional resource monitoring.
 
-The project focuses on reducing resource wastage by providing data-driven insights and intelligent alerts.
+## Features
+- Time-series feature engineering
+- Model comparison (Linear Regression vs Random Forest)
+- Automatic best model selection
+- Isolation Forest anomaly detection
+- REST API using FastAPI
+- Swagger documentation
 
----
-
-## 🎯 Objectives
-- Predict future electricity consumption using machine learning
-- Detect abnormal or wasteful usage patterns
-- Provide insights through dashboards and alerts
-- Build an end-to-end AI system (data → model → backend → dashboard)
-
----
-
-## 🧠 Project Scope (Phase 0)
-- Resource: Electricity
-- Data Type: Time-series data
-- AI Tasks:
-  - Consumption prediction
-  - Anomaly detection
-- Deployment: Planned
-
----
-
-## 🛠️ Tech Stack
-### AI / ML
+## Tech Stack
 - Python
 - Pandas, NumPy
 - Scikit-learn
-
-### Backend
 - FastAPI
+- Uvicorn
 
-### Frontend (Planned)
-- React.js
-- Chart.js
+## Model Performance
+Random Forest:
+- R² Score: 0.86
+- MAE: 1.396
+- RMSE: 1.773
 
----
+## API Endpoints
+- GET /health
+- POST /predict
+- POST /anomaly
 
-## 📂 Project Structure
+## Future Improvements
+- Real-time data streaming
+- Cloud deployment
+- Frontend dashboard
+- Hyperparameter tuning
