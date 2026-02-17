@@ -1,16 +1,19 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "http://localhost:8000";
+
 
 async function predict() {
 
-    const data = {
-        day: 15,
-        month: 3,
-        day_of_week: 2,
-        is_weekend: 0,
-        lag_1: parseFloat(document.getElementById("lag1").value),
-        lag_24: parseFloat(document.getElementById("lag24").value),
-        block_Block_B: 1
-    };
+   const data = {
+    hour: 14,
+    day: 15,
+    month: 3,
+    day_of_week: 2,
+    is_weekend: 0,
+    lag_1: parseFloat(document.getElementById("lag1").value),
+    lag_24: parseFloat(document.getElementById("lag24").value),
+    block_Block_B: 1
+};
+
 
     const response = await fetch(`${API_URL}/predict`, {
         method: "POST",
